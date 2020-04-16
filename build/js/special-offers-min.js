@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".special-offers__slider").slick({variableWidth:!0,focusOnSelect:!0,prevArrow:$(".special-offers__prev"),nextArrow:$(".special-offers__next"),dots:!1,arrows:!0,responsive:[{breakpoint:768,settings:{arrows:!1}}]})});

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".reviews__wrap").slick({mobileFirst:!0,dots:!0,arrows:!1,responsive:[{breakpoint:768,settings:{slidesToShow:2,slidesToScroll:2}}]})});

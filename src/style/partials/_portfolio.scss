@@ -1,0 +1,81 @@
+.portfolio {
+    padding: 60px 0 120px;
+    &__slider {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__slider-arrows {
+        display: flex;
+        width: 96px;
+        justify-content: space-between;
+    }
+
+    &__prev {
+        background: url('../img/icons/special-offer-prev.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        left: -25px;
+        width: 32px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    &__next {
+        background: url('../img/icons/special-offer-next.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        right: -25px;
+        width: 32px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    
+
+    &__item {
+        position: relative;    
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 410px;
+        min-width: 410px;
+        margin: 0 24px 0 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .portfolio {
+        &__item {
+            margin: 0 0 0 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio {
+        &__item {
+            margin: 0 0 0 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        &__slider-arrows {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio {
+        &__item {
+            max-width: 270px;
+            min-width: 270px;
+        }
+    }
+}

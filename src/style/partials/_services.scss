@@ -1,0 +1,404 @@
+
+
+.services-main {
+
+    &__wrap {
+        padding: 40px 0;
+    }
+    
+
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 -12px;
+    }
+
+    &__tabs-item {
+        width: calc((100% / 6) - 24px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 145px;
+        border-radius: 8px;
+        margin: 0 12px 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: rgba($color: $text, $alpha: 0.78);
+        background-color: $blue;
+        transition: 0.3s;
+
+        &:hover, &.active {
+            color: rgba($color: $text, $alpha: 0.78);
+        }
+        
+    }
+    
+    &__content {
+        display: block;
+    }
+
+    &__content-item {
+        display: none;
+        margin: 0 -20px;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__content-block {
+        background-color: $blue;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        padding: 40px;
+        margin: 0 20px;
+        width: calc(50% - 40px);
+    }
+
+    &__content-block-title {
+        font-size: 18px;
+        line-height: 1;
+        color: $text;
+        margin-bottom: 32px;
+        font-weight: 700;
+        color: $text;
+        margin-bottom: 32px;
+    }
+
+    &__content-block-list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 24px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: -33px;
+            top: -3px;
+            
+            margin: auto;
+            width: 26px;
+            height: 26px;
+            
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+
+            .services-main__content-block-list-text {
+                color: $green;
+                text-shadow: 0.2px 0.2px 0px $green, -0.2px -0.2px 0px $green, -0.2px 0.2px 0px $green, 0.2px -0.2px 0px $green;
+                // font-weight: 700;
+            }
+
+            .services-main__content-block-list-price {
+                color: $green;
+            }
+        }
+    }
+
+    &__content-block-list-item--sale:before {
+        background-image: url(../img/icons/services-sale.svg);
+    }
+    &__content-block-list-item--new:before {
+        background-image: url(../img/icons/services-new.svg);
+    }
+    &__content-block-list-item--vip:before {
+        background-image: url(../img/icons/services-vip.svg);
+    }
+
+    &__content-block-list-text {
+        font-size: 16px;
+        line-height: 22px;
+        color: $text; 
+        padding-right: 30px;
+        transition: all 0.2s;
+    }
+
+    &__content-block-list-price {
+        font-size: 16px;
+        line-height: 22px;
+        color: $text;
+        font-weight: 700;
+        text-align: right;
+        white-space: nowrap;
+        transition: all 0.2s;
+    }
+}
+
+.services {
+   
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        padding: 64px 0;
+    }
+
+    &__item {
+        display: block;
+        width: calc((100% / 3) - 40px);
+        margin: 0 20px 40px;
+        
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-image {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__item-icon {
+        position: absolute;
+        left: 0;
+        top: 16px;
+        background-color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 20px;
+        color: $text;
+        font-weight: 700;
+        border-bottom-right-radius: 22px;
+        border-top-right-radius: 22px;
+        padding: 12px 29px;
+    }
+
+    &__item-content {
+        padding: 16px 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: $text;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.services-recommend {
+    padding: 80px 0 40px;
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    &__item {
+        
+        width: calc((100% / 4) - 40px);
+        margin: 0 20px 40px;
+        border-radius: 16px;
+        background-color: $white;
+    }
+
+    &__item-image {
+        padding: 24px 24px 0;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+
+    &__item-content {
+        padding: 20px 24px 24px;
+    }
+
+    &__item-name {
+        font-size: 18px;
+        line-height: 110%;
+        font-weight: 700;
+        color: rgba($color: $text, $alpha: 0.8);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
+    }
+
+    &__item-numb {
+        font-weight: 400;
+        padding-left: 10px;
+    }
+
+    &__item-descr {
+        font-size: 16px;
+        line-height: 110%;
+        font-weight: 400;
+        color: rgba($color: $text, $alpha: 0.8);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services-main {
+
+        &__tabs {
+            margin: 0 -8px;
+        }
+    
+        &__tabs-item {
+            width: calc((100% / 3) - 16px);
+            margin: 0 8px 16px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            color: $text;
+
+            p {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-color: $white;
+                padding: 9px;
+                border-top-right-radius: 10px;
+            }
+
+            &:nth-of-type(1) {
+                background-image: url(../img/service-main1.png);
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(../img/service-main2.png);
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(../img/service-main3.png);
+            }
+
+            &:nth-of-type(4) {
+                background-image: url(../img/service-main4.png);
+            }
+
+            &:nth-of-type(5) {
+                background-image: url(../img/service-main5.png);
+            }
+
+            &:nth-of-type(6) {
+                background-image: url(../img/service-main6.png);
+                background-size: 53px 87px;
+                background-position-y: 15px;
+                p {
+                    background: none;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+    
+            &:hover, &.active {
+                color: $text;
+            }
+            
+        }
+
+        &__content {
+            display: none;
+        }
+    }
+
+    .services {
+        
+        &__wrap {
+            margin: 0 -15px;
+        }
+    
+        &__item {
+            width: calc((100% / 3) - 30px);
+            margin: 0 15px 40px;
+        }
+    }
+
+    .services-recommend {
+        
+        &__wrap {
+            margin: 0 -15px;
+        }
+    
+        &__item {
+            
+            width: calc((100% / 4) - 30px);
+            margin: 0 15px 40px;
+        }
+    
+        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services {
+        
+        &__wrap {
+            margin: 0 -15px;
+        }
+    
+        &__item {
+            width: calc((100% / 2) - 30px);
+            margin: 0 15px 40px;
+        }
+    }
+
+
+    .services-recommend {          
+    
+        &__item {            
+            width: calc((100% / 3) - 30px);            
+        }   
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-main {
+        &__tabs-item {
+            width: calc(50% - 16px);
+            font-size: 12px;
+        }
+    }
+
+    
+
+    .services-recommend {    
+        &__item {            
+            width: calc(50% - 30px);
+            margin: 0 15px 24px;
+        }  
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services {
+    
+    
+        &__item {
+            width: calc(100% - 30px);
+        }
+    }
+
+    .services-recommend {    
+        &__item {            
+            width: calc(100% - 30px);
+            margin: 0 15px 24px;
+        }  
+        
+    }
+}
+
+
+

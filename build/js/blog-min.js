@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".blog__slider").slick({arrows:!0,dots:!1,variableWidth:!1,slidesToShow:3,slidesToScroll:3,prevArrow:$(".blog__prev"),nextArrow:$(".blog__next"),responsive:[{breakpoint:1200,settings:{arrows:!0,variableWidth:!0,slidesToScroll:1}}]})});

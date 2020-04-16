@@ -1,0 +1,410 @@
+// главная страница
+.intro {
+    background-color: $light-orange;
+    position: relative;
+
+    &__carousel-item {
+        background-position: right center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    &__carousel-item-wrap {
+        height: 643px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+        
+    }
+
+    &__carousel-title {
+        font-size: 56px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        color: $text;
+        max-width: 740px;
+    }
+
+    &__carousel-descr {
+        font-size: 18px;
+        line-height: 1.6;
+        color: $text;
+        text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+        margin-bottom: 56px;
+        color: $text;
+        max-width: 510px;
+    }
+
+    &__carousel-arrows {        
+        right: 0;    
+        left: 1136px;
+        position: absolute;
+        bottom: 32px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 190px;
+        opacity: 1;
+        z-index: 5;
+        
+    }
+
+    &__carousel-link {
+        font-size: 16px;
+        line-height: 19px;
+        color: $text;
+        text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+        background-color: $white;
+        border-radius: 16px;
+        padding: 16px 66px;
+    }
+
+    &__carousel-arrows-item {
+        cursor: pointer;
+    }
+
+    &__carousel-count {
+        transform: translateX(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        line-height: 51px;
+        letter-spacing: 0.3em;
+        color: $white;
+        font-weight: 700;
+    }
+}
+
+
+// остальные страницы
+.pages-intro {
+    background-color: $light-orange;
+    padding: 80px 0 64px;
+    overflow: hidden;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        left: -283px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 566px;
+        height: 566px;
+        z-index: 1;
+        border-radius: 900px;
+        background-color: rgba($color: $white, $alpha: 0.2);
+    }
+
+    &__wrap {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 56px;
+        line-height: 78px;
+        color: $text;
+        margin-bottom: 16px;
+    }
+
+    &__descr {
+        color: $text;
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+
+    &__feedback {
+        max-width: 307px;
+
+    }
+
+    &__feedback-label {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    &__feedback-input {
+        background-color: rgba($color: $white, $alpha: 0.6);
+        height: 46px;
+        border: 1px solid $green;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 1;
+        color: $text;
+        display: block;
+        width: 100%;
+        padding: 5px 16px;
+    }
+
+    &__feedback-select {
+        background-color: rgba($color: $white, $alpha: 0.6);
+        border-radius: 8px;
+        border: 1px solid $green;
+        display: block;
+        width: 100%;
+        height: 46px;
+        padding: 5px 16px;
+        color: $text;
+        font-size: 14px;
+        appearance: none;
+        background-image: url(../img/icons/dropdown.svg);
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+    }
+
+    &__feedback-textarea {
+        background-color: rgba($color: $white, $alpha: 0.6);
+        border-radius: 8px;
+        border: 1px solid $green;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 5px 16px;
+        color: $text;
+        font-size: 14px;
+    }
+
+    &__feedback-submit {
+        background-color: $green;
+        border-radius: 8px;
+        height: 51px;
+        width: 100%;
+        display: block;
+        border: 1px solid $green;
+        font-size: 16px;
+        color: $white;
+        font-weight: 700;
+    }
+
+    &__feedback-agree {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 14px;
+        color: $text;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .intro {
+        &__carousel-arrows {        
+            right: 56px;    
+            left: auto;            
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .intro {
+        &__carousel-arrows {        
+            right: 16px;                
+        }
+    
+    }
+
+    // остальные страницы
+    .pages-intro {
+        position: relative;
+        padding: 56px 0 32px;
+        
+        &:before {
+            top: -100px;
+            bottom: auto;
+            
+        }
+        
+        &__wrap {
+            display: block;
+           
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 1;
+
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .intro {
+        &__carousel-item {
+            
+            &:after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: $white, $alpha: 0.5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+
+        &__carousel-item {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        &__carousel-item-wrap {
+            height: 480px;  
+        }
+
+        &__carousel-title {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+    
+        &__carousel-descr {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        &__carousel-arrows {        
+            display: none;         
+        }
+    
+    }
+}
+
+// Страница специалиста детально
+.team-detail-intro {
+    position: relative;
+    
+    padding: 20px 0 0;
+    background-color: $light-orange;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: -283px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 566px;
+        height: 566px;
+        z-index: 1;
+        border-radius: 900px;
+        background-color: rgba($color: $white, $alpha: 0.2);
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__content {
+        padding: 80px 0 64px;
+    }
+
+    &__title {
+        font-size: 56px;
+        line-height: 78px;
+        color: $text;
+        margin-bottom: 16px;
+        max-width: 700px;
+    }
+
+    &__descr {
+        color: $text;
+        max-width: 600px;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 30px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__image {
+        display: block;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__link {
+        background-color: $white;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text;
+        padding: 17px 40px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    // Страница специалиста детально
+    .team-detail-intro {
+        position: relative;
+        padding: 56px 0 32px;
+        
+        &:before {
+            top: -100px;        
+            bottom: auto;
+            
+        }
+        
+        &__wrap {
+            display: block;
+        }
+
+        &__content {
+            padding: 0;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 1;
+
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 29px;
+        
+            margin-bottom: 14px;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+}

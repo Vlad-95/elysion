@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".product__row-slider").slick({variableWidth:!0,arrows:!0,dots:!1})});

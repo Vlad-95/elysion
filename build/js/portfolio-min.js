@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".portfolio__slider").slick({variableWidth:!0,focusOnSelect:!0,prevArrow:$(".portfolio__prev"),nextArrow:$(".portfolio__next"),dots:!1,arrows:!0,responsive:[{breakpoint:768,settings:{arrows:!1}}]})});

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Bold.eot');
+
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Bold.eot?iefix') format('eot'),
+         url('../fonts/Helvetica/HelveticaNeueCyr-Bold.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Medium.eot');
+
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Medium.eot?iefix') format('eot'),
+         url('../fonts/Helvetica/HelveticaNeueCyr-Medium.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Roman.eot');
+
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Roman.eot?iefix') format('eot'),
+         url('../fonts/Helvetica/HelveticaNeueCyr-Roman.woff') format('woff'),
+         url('../fonts/Helvetica/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Snell';
+    src: url('../fonts/snell-roundhand/snellroundhand.eot');
+
+    src: url('../fonts/snell-roundhand/snellroundhand.eot?iefix') format('eot'),
+         url('../fonts/snell-roundhand/snellroundhand.woff') format('woff'),
+         url('../fonts/snell-roundhand/snellroundhand.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Snell';
+    src: url('../fonts/snell-roundhand/snellroundhand-bold.eot');
+
+    src: url('../fonts/snell-roundhand/snellroundhand-bold.eot?iefix') format('eot'),
+         url('../fonts/snell-roundhand/snellroundhand-bold.woff') format('woff'),
+         url('../fonts/snell-roundhand/snellroundhand-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Snell';
+    src: url('../fonts/snell-roundhand/snellroundhand-black.eot');
+
+    src: url('../fonts/snell-roundhand/snellroundhand-black.eot?iefix') format('eot'),
+         url('../fonts/snell-roundhand/snellroundhand-black.woff') format('woff'),
+         url('../fonts/snell-roundhand/snellroundhand-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+
+}

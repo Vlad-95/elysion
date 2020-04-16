@@ -1,0 +1,329 @@
+.loyalty {
+    padding: 56px 0 120px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 700px;
+        padding-right: 20px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 130%;
+            color: $text;
+            margin-bottom: 24px;
+            max-width: 500px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 180%;
+            color: $text;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 180%;
+            color: $black;
+            text-decoration: underline;
+            display: inline-block;
+            margin-top: 24px;
+        }
+        
+    }
+
+    &__image {
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        max-width: 570px;
+        margin: 105px -10px 0;
+    }
+
+    &__image-item {
+        width: calc(50% - 20px);
+        margin: 0 10px 20px;
+        
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__table {
+        margin-top: 170px;
+    }
+
+    &__table-row {
+        display: flex;
+        width: 100%;
+    }
+
+    &__table-cell {
+        width: 20%;
+        min-height: 105px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        background: $white;
+        border: 1px solid #FFF0E9;
+        font-size: 14px;
+        line-height: 140%;
+        color: $text;
+    }
+    
+    &__table-cell--orange {
+        background: rgba(255, 217, 201, 0.1);
+        border: 1px solid $light-orange;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__table-cell--white {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -55px;
+            width: 157px;
+            height: 78px;
+            background-image: url(../img/loyalty-white.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__table-cell--ruby {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -50px;
+            width: 157px;
+            height: 66px;
+            background-image: url(../img/loyalty-ruby.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__table-cell--silver {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -50px;
+            width: 157px;
+            height: 66px;
+            background-image: url(../img/loyalty-silver.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__table-cell--gold {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -50px;
+            width: 157px;
+            height: 66px;
+            background-image: url(../img/loyalty-gold.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__tabs {
+        display: none;
+    }
+
+    &__tabs-select {
+        margin-top: 80px;
+        margin-bottom: 107px;
+        position: relative;
+    }
+
+    &__tabs-current {
+        background: $light-orange;
+        border: 1px solid $light-orange;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text;
+        font-weight: 700;
+        text-align: center;
+        padding: 15px 16px;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+        }
+    }
+    
+
+    &__tabs-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border: 1px solid $light-orange;
+        background-color: $white;
+        z-index: 3;
+    }
+
+    &__tabs-other {
+        font-size: 16px;
+        line-height: 20px;
+        color: $text;
+        font-weight: 400;
+        text-align: center;
+        padding: 16px;
+        
+        &.active {
+            background-color: #FFF0E9;
+        }
+    }
+    
+    &__tabs-content-item {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__tabs-content-block {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        color: $text;
+        background-color: $white;
+        border: 1px solid #FFF0E9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__tabs-content-block--name {
+        font-size: 18px;
+        line-height: 180%;
+        background-color: #FFF0E9;
+        border-color: #FFF0E9;
+        text-transform: uppercase;
+    }
+
+    &__tabs-content-block--white {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -65px;
+            width: 157px;
+            height: 78px;
+            background-image: url(../img/loyalty-white.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__tabs-content-block--ruby {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -55px;
+            width: 157px;
+            height: 66px;
+            background-image: url(../img/loyalty-ruby.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__tabs-content-block--silver {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -55px;
+            width: 157px;
+            height: 66px;
+            background-image: url(../img/loyalty-silver.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__tabs-content-block--gold {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -55px;
+            width: 157px;
+            height: 66px;
+            background-image: url(../img/loyalty-gold.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .loyalty {
+        &__image {
+            display: none;
+        }
+
+        &__table {
+            display: none;
+        }
+
+        &__tabs {
+            display: block;
+        }
+    }
+}

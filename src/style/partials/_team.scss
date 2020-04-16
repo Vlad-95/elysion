@@ -1,0 +1,276 @@
+.team {
+    margin-bottom: 80px;
+
+    &__slider {
+        max-width: 1600px;
+        margin: 0 auto;
+    }    
+
+    &__item {
+        position: relative;
+        border: 1px solid rgba(51, 51, 51, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 40px 0 0;
+        max-width: 350px;
+        min-width: 350px;
+        display: block;
+    }
+
+    &__img {
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0 16px 30px;      
+
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+        color: $text;
+        margin-bottom: 8px;
+
+        .last-name {
+            display: block;
+            font-weight: 700;
+        }
+    }
+
+    &__specialisation {
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba($color: $text, $alpha: 0.8);
+    }
+
+    // страница СПЕЦИАЛИСТЫ
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 24px 0 0;
+        margin: 0 -20px;
+        
+        .team__item {
+            max-width: none;
+            min-width: auto;
+            width: calc((100% / 3) - 40px);
+            border: none;
+            margin: 0 20px 40px;
+        
+        }
+    }
+}
+
+
+
+// страница Специалиста - детальная
+.team-detail {
+    padding: 56px 0 80px;
+
+    &__wrap {
+        max-width: 700px;
+    }
+
+    &__awards {
+        margin-bottom: 48px;
+    }
+
+    &__awards-item {
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        color: $text;
+        font-weight: 500;
+        margin-bottom: 40px;
+        padding-left: 28px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            background-color: $green;
+            border-radius: 50px;
+        }
+    }
+    
+    &__info {
+        margin-bottom: 56px;
+    }
+
+    &__info-title {
+        font-size: 24px;
+        line-height: 31px;
+        color: $text;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    &__info-item {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 4px;
+            height: 4px;
+            background-color: $text;
+            border-radius: 50px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__states {
+        margin-bottom: 56px;
+    }
+    
+    &__state-title {
+        font-size: 24px;
+        line-height: 31px;
+        color: $text;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    &__states-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__states-name {
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+        padding-right: 10px;
+        max-width: 70%;
+    }
+
+    &__states-link {
+        font-size: 16px;
+        line-height: 26px;
+        color: $text;
+        font-weight: 700;
+    }
+
+    &__text {
+        h2,h3,h4,h5 {
+            font-size: 16px;
+            line-height: 21px;
+            color: $text;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            color: $text;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .team {
+        &__item { 
+            margin: 0 0 0 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .team {
+        &__item { 
+            margin: 0 0 0 16px;
+        }
+
+        // страница СПЕЦИАЛИСТЫ
+        &__wrap {
+            margin: 0 -16px;
+            
+            .team__item {
+                max-width: none;
+                width: calc((100% / 3) - 32px);
+                margin: 0 16px 40px; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .team {
+        // страница СПЕЦИАЛИСТЫ
+        &__wrap {
+
+            .team__item {
+                width: calc(50% - 32px);
+            }
+        }
+    }
+
+    // страница Специалиста - детальная
+    .team-detail {
+        &__states-name {
+            max-width: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        &__item {
+            max-width: 327px;
+            min-width: 327px;
+        }
+
+        // страница СПЕЦИАЛИСТЫ
+        &__wrap {
+            display: block;
+            .team__item {
+                max-width: 350px;
+                width: 100%;
+                margin: 0 auto 40px auto;   
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .team {
+        &__item {
+            max-width: 270px;
+            min-width: 270px;
+        }
+    }
+}

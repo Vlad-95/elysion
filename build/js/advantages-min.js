@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".advantages__wrap").slick({mobileFirst:!0,variableWidth:!0,focusOnSelect:!0,dots:!1,arrows:!1,responsive:[{breakpoint:768,settings:"unslick"}]})});
